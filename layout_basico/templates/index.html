@@ -4,14 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site TOP</title>
+    <style>
+        #menu{
+            width:100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-bottom: 1px solid #000;
+        }
+
+        .nav.menu{
+            width: 50vw;
+        }
+
+        .nav.menu ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .nav-menu ul li a{
+            color: #0e0e00;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 50px;
+            
+        }
+
+        .nav-menu ul li a:hover{
+            color: blue;
+            background-color: aqua;
+
+        }
+
+        section.section div.imagem img{
+            width: 128px;
+            display: flex;
+            padding: 6px;
+        }
+
+        section.section{
+            display: flex;
+            flex-direction: row;
+        }
+
+        </style>
 </head>
 <body>
     <div id="menu">
         <nav class="nav-menu">
             <ul>
-                <li>Home</li>
-                <li>Receitas Salgadas</li>
-                <li>Receitas Doces</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Salgadas</a></li>
+                <li><a href="#">Receitas Doces</a></li>
             </ul>
         </nav>
     </div>
