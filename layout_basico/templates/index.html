@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site TOP</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        body{
+            font-family: Arial, Hevetica, sans-senf;
+            margin: 0;
+            padding: 0;
+
+        }
+
         #menu{
             width:100vw;
             display: flex;
@@ -15,6 +26,7 @@
 
         .nav.menu{
             width: 50vw;
+
         }
 
         .nav-menu ul{
@@ -23,6 +35,10 @@
             flex-direction: row;
             gap: 12px;
             justify-content: center;
+            padding: 0;
+        }
+        .nav-menu ul li{
+            margin: 0 15px;
         }
 
         .nav-menu ul li a{
@@ -30,7 +46,7 @@
             text-decoration: none;
             padding: 12px;
             border-radius: 50px;
-            
+            transition: backgrouns-color 0.3s ease, color 0,3s ease;
         }
 
         .nav-menu ul li a:hover{
@@ -41,13 +57,64 @@
 
         section.section div.imagem img{
             width: 128px;
-            display: flex;
+            max-width: 500px;
+            height: auto;
+            border-radius:8px;
+            margin:10px;
             padding: 6px;
         }
 
         section.section{
+            margin: 20px 0;
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #receitas-salgadas, #receitas-doces{
+            width: 45%;
+
+        }
+        #receitas-salgadas ul, #receitas-doces ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #333444;
+            margin-bottom: 15px;
+        }
+        .receita-lista{
+            background-color: #e3e3e3;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .receita-lista li{
+            padding: 8px 0px 8px 8px;
+            border-bottom: 1px solid #dddddd;
+
+        }
+        .receita-lista li:last-child{
+            border-bottom: none;
+        }
+        iframe{
+            display:blod;
+            margin: 30px auto;
+            border-radius: 8px;
+
+        }
+        footer{
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid#ccceee;
+        }
+        footer p{
+            color:#666;
+            margin:6px;
         }
 
         </style>
@@ -65,7 +132,8 @@
     <div id="content">
         <section class="section">
             <div id="receitas-salgadas">
-                <ul>
+                <h2> Receitas-Salgadas</h2>
+                <ul class="receita-lista">
                     <li>Receita 1</li>
                     <li>Receita 2</li>
                     <li>Receita 3</li>
@@ -75,7 +143,8 @@
                 </ul>
             </div>
             <div id="receitas-doces">
-                <ul>
+                <h2> Receitas-Doces</h2>
+                <ul class="receita-lista">
                     <li>Receita 1</li>
                     <li>Receita 2</li>
                     <li>Receita 3</li>
@@ -94,5 +163,8 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c?si=y5cEi7h1SB6YL7gE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </div>
+    <foother>
+        <p>&copy; 2024 Meu site. Todos os direitos reservados.</p>
+    </foother>
 </body>
 </html>
